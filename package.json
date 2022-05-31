@@ -21,8 +21,8 @@
     "@vue/cli-service": "~4.5.12",
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^7.20.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2"
   },
@@ -33,12 +33,22 @@
     },
     "extends": [
       "plugin:vue/vue3-essential",
+      "plugin:vue/vue3-recommended",
       "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-console": "off",
+      "no-debugger": "off",
+      "no-unused-components": "off",
+      "no-unused-vars": "off",
+      "comma-dangle": [
+        1,
+        "always-multiline"
+      ]
+    }
   },
   "browserslist": [
     "> 1%",
